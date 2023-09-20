@@ -1,11 +1,23 @@
 import Banner from "componentes/Banner";
+import styles from "./Inicial.module.css"
 
-export default function Inicio() {
+import posts from "json/posts.json";
+
+const Inicio = () => {
     return (
         <main>
             <Banner />
-            <h1>Olá Mundo</h1>
+
+            <ul className={styles.posts}>
+                {posts.map((post) => (
+                    <li key={post.id}>
+                        <Post post={post} />
+                    </li>
+                ))}
+            </ul>
         </main>
 
     )
 }
+
+export default Inicio;

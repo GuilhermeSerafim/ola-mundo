@@ -17,8 +17,9 @@ const Banner = () => {
             <div className={styles.imagens}>
                 <img
                     className={styles.circuloColorido}
+                    alt="Circulo colorido"
                     src={circuloColorido}
-                    aria-hidde={true}
+                    aria-hidden={true}
                 />
                 <img
                     className={styles.minhaFoto}
