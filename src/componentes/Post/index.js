@@ -7,6 +7,10 @@ const Post = ({ post }) => {
                 className={styles.capa}
                 src={`./assets/posts/${post.id}/capa.png`} //Caminho ficou dinamico
             />
+
+            <h2 className={styles.titulo}>{post.titulo}</h2>
+
+            <button className={styles.botaoLer}>Ler</button>
         </div>
     )
 }
