@@ -9,10 +9,11 @@ const Banner = () => {
                 <h1 className={styles.titulo}>
                     Olá, Mundo!
                 </h1>
+                <p className={styles.paragrafo}>
+                    Boas vindas ao meu espaço pessoal! Eu sou Guilherme Serafim, Jovem Aprendiz da Tokio Marine. Aqui compartilho vários conhecimentos, espero que aprenda algo novo :
+                </p>
             </div>
-            
-            <p className={styles.paragrafo}>Boas vindas ao meu espaço pessoal! Eu sou Guilherme Serafim, Jovem Aprendiz da Tokio Marine. Aqui compartilho vários conhecimentos, espero que aprenda algo novo :</p>
-            
+
             <div className={styles.imagens}>
                 <img
                     className={styles.circuloColorido}
