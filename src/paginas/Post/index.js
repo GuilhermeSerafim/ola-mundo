@@ -7,8 +7,9 @@ import NaoEncontrada from "paginas/NaoEncontrada";
 
 const Post = () => {
     
-    //Aqui ele retorna apenas o parametro da url ("1", "2", "3"...)
+    //Aqui ele retorna apenas o parametro da url ("1", "2", "3"...) - Ele pega o /caminho/:nomedoparametro
     const parametros = useParams();
+    console.log(parametros)
     //Aqui ele retorna o objeto de acordo com o parametro passado
     const post = posts.find((post) => {
         return post.id === Number(parametros.id) //Porque o id era uma string e estamos utilizando ===
