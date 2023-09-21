@@ -23,23 +23,20 @@ const Post = () => {
     }
 
     return (
-        <Routes>
-            {/* Aqui dentro de todos os posts que forem encontrados, ele vai renderizar o elemento PaginaPadrao junto (porque tem o Outlet na pagina padrão)*/}
-            <Route path="*" element={<PaginaPadrao />}>
-                <Route index element={
-                    <PostModelo
-                        fotoCapa={`/assets/posts/${post.id}/capa.png`}
-                        titulo={post.titulo}
-                    >
-                        <div className="post-markdown-container">
-                            <ReactMarkdown>
-                                {post.texto}
-                            </ReactMarkdown>
-                        </div>
-                    </PostModelo>
-                } />
-            </Route>
-        </Routes>
+
+        <PaginaPadrao>
+            <PostModelo
+                fotoCapa={`/assets/posts/${post.id}/capa.png`}
+                titulo={post.titulo}
+            >
+                <div className="post-markdown-container">
+                    <ReactMarkdown>
+                        {post.texto}
+                    </ReactMarkdown>
+                </div>
+            </PostModelo>
+        </PaginaPadrao>
+
     )
 }
 
