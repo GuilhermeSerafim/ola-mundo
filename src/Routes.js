@@ -12,8 +12,8 @@ function AppRoutes() {
       <Routes>
         {/*  Rotas aninhadas */}
         <Route path="/" element={<PaginaPadrao />}>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/sobremim" element={<SobreMim />} />
+          <Route index element={<Inicio />} />
+          <Route path="sobremim" element={<SobreMim />} />
         </Route>
         {/* 
           Na rota "/", a estrutura a ser renderizada é:
