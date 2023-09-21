@@ -1,3 +1,4 @@
+import BotaoPrincipal from 'componentes/BotaoPrincipal';
 import styles from './NaoEncontrada.module.css';
 import error404 from 'assets/erro_404.png'
 
@@ -18,7 +19,7 @@ const NaoEncontrada = () => {
                     Aguarde uns instantes e recarregue a página, ou volte para a página inicial.
                 </p>
                 <div className={styles.botaoContainer}>
-                    <button>Voltar</button>
+                    <BotaoPrincipal tamanho="lg">Voltar</BotaoPrincipal>
                 </div>
                 <img
                     className={styles.imagemCachorro}

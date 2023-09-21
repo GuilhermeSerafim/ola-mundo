@@ -1,9 +1,12 @@
 import { Children } from 'react';
 import styles from './BotaoPrincipal.module.css';
 
-const BotaoPrincipal = ({ children }) => {
+const BotaoPrincipal = ({ children, tamanho }) => {
     return (
-        <button className={styles.botaoLer}>
+        <button className={`
+            ${styles.botaoPrincipal}
+            ${styles[tamanho]}
+        `}>
             {children}
         </button>
     )
