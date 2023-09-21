@@ -17,8 +17,8 @@ function AppRoutes() {
           <Route index element={<Inicio />} />
           <Route path="sobremim" element={<SobreMim />} />
         </Route>
-          <Route path="post/:id" element={<Post/>}/>
-        <Route path="*" element={<NaoEncontrada/>} />
+        <Route path="post/:id/*" element={<Post />} />
+        <Route path="*" element={<NaoEncontrada />} />
       </Routes>
       <Rodape />
     </BrowserRouter>
