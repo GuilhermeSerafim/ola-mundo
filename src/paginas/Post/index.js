@@ -24,6 +24,7 @@ const Post = () => {
         )
     }
 
+    //Desafio concluído
     const postsRecomendados = posts
         .filter((post) => post.id !== Number(parametros.id)) //Imprime todos os post (4) menos cujo parametro é igual
         .sort((a, b) => b.id - a.id) //Ordem descrecente a partir daquele post
