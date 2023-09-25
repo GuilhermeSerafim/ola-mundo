@@ -8,7 +8,7 @@ const PostCard = ({ post }) => {
             <div className={styles.post}>
                 <img
                     className={styles.capa}
-                    src={`./assets/posts/${post.id}/capa.png`} //Caminho ficou dinamico
+                    src={`/assets/posts/${post.id}/capa.png`} //Caminho ficou dinamico
                     alt='Capa dos cards'
                 />
 
