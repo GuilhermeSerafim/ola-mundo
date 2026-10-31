@@ -1,3 +1,11 @@
+# Olá Mundo — blog em React
+
+Projeto prático de blog pessoal. A navegação em `src/Routes.js` organiza início, sobre mim, post por identificador e página não encontrada, usando React Router. A página de post lê os textos de um JSON local, renderiza Markdown e sugere até quatro outros posts ordenados por identificador decrescente. Essa seleção é uma regra local; não é recomendação personalizada.
+
+O projeto usa React 18, React Router 6, react-markdown 8 e react-scripts 5. Os posts vêm de conteúdo local; esse fluxo não depende de CMS ou backend.
+
+## Ambiente de desenvolvimento
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -25,7 +33,7 @@ Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The generated build can be used in a deployment configured for this application.
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
